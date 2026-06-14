@@ -15,8 +15,6 @@ def is_criticality_balanced(temperature, neutrons_emitted):
 
     Returns:
         bool: Is criticality balanced?
-
-    A reactor is said to be balanced in criticality if the product of temperature and neutrons emitted per second is less than 500000.
     """
 return safe_temperature and proper_neutron_emition and criticality
 
