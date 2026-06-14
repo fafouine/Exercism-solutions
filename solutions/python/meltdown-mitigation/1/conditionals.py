@@ -1,18 +1,10 @@
 """Functions to prevent a nuclear meltdown."""
 
 
-def is_at_safe_temperature(temperature):
-    """verify if the reactor's temperature is safe.
-
+safe_temperature = temperature < 800
     Parameters:
-        - temperature (int or float): The temperature value in kelvin
-
-    Returns:
         bool: Is the temperature safe?
 
-    Note: A reactor is said to be balanced in criticality the reactor's temperature is less than 800 K.
-    """
-    return temperature < 800
 
 
 def has_proper_neutron_emition(neutrons_emitted):
