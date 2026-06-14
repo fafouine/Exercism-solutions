@@ -12,10 +12,7 @@ def is_at_safe_temperature(temperature):
 
     Note: A reactor is said to be balanced in criticality the reactor's temperature is less than 800 K.
     """
-    if temperature < 800:
-        return True
-    else:
-        return False
+    return temperature < 800
 
 
 def has_proper_neutron_emition(neutrons_emitted):
@@ -29,10 +26,7 @@ def has_proper_neutron_emition(neutrons_emitted):
 
     Note: A reactor is said to be balanced in criticality if the number of neutrons emitted per second is greater than 500.
     """
-    if neutrons_emitted > 500:
-        return True
-    else:
-        return False
+    return neutrons_emitted > 500
 
         
 def is_criticality_balanced(temperature, neutrons_emitted):
@@ -47,10 +41,7 @@ def is_criticality_balanced(temperature, neutrons_emitted):
 
     A reactor is said to be balanced in criticality if the product of temperature and neutrons emitted per second is less than 500000.
     """
-    if is_at_safe_temperature(temperature) and has_proper_neutron_emition(neutrons_emitted) and (temperature * neutrons_emitted < 500000):
-        return True
-    else:
-        return False
+return is_at_safe_temperature(temperature) and has_proper_neutron_emition(neutrons_emitted) and (temperature * neutrons_emitted < 500000):
 
 
 def efficiency_percentage(voltage, current, theoretical_max_power):
